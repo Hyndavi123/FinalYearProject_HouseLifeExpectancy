@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Test</title>
+        <style>
+            form {
+                padding-top: 35px;
+                padding-left:250px;
+            }
+        </style>
+    </head>
+    <body style="background-color:#afded7;">
+        <div class="container">
+            <center>
+        	    <h1>House Life Expectancy</h1>
+            </center>
+        	<form action="{{ url_for('results') }} " method="POST">
+                <label for="soilBearingC">Choose the soil bearing capacity</label>
+                
+                <select name="soil" id="soilBearingC" style="margin-left: 10px; padding-right: 95px;">
+                    <option value="deep">Deep</option>
+                    <option value="shallow">Shallow</option>
+                </select><br/><br />
+                
+                <label for="loadsActing">Choose the loads acting</label>
+                
+                <select name="load" id="loadsActing" style="margin-left: 66px; padding-right: 110px;">
+                    <option value="dead">Dead</option>
+                    <option value="live">Live</option>
+                  </select><br/><br />
+
+                <label for="soilBearingC">Choose the iron quality</label>
+                
+                <select name="iron" id="ironQuality" style="margin-left: 69px; padding-right: 95px;">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                  </select><br/><br />
+
+                <label for="sandType">Choose the sand type</label>
+                
+                <select name="sand" id="sandType" style="margin-left: 82px; padding-right: 90px;">
+                    <option value="concrete">Concrete</option>
+                    <option value="pit">Pit</option>
+                    <option value="utility">Utility</option>
+                    <option value="fill">Fill</option>
+                  </select><br/><br />
+
+
+                <label for="rows">Enter number of rows </label>
+                <input type="number" name="rows" placeholder="Enter no.of rows" min="0" id="rows" style="margin-left: 78px;" required></br></br>
+                <label for="cols">Enter number of columns </label>
+                <input type="number" name="cols" placeholder="Enter no.of columns" min="0" style="margin-left: 54px;"  id="cols" required></br></br>
+                <label for="stairs">Enter number of stairs </label>
+                <input type="number" name="stairs" placeholder="Enter no.of stairs" min="0" style="margin-left: 76px;"  id="stairs" required></br></br>
+                <label for="soilBearingC">Choose the earthquake load</label>
+                
+                <select name="earth" id="earthquake"  style="margin-left: 42px; padding-right: 90px;" >
+                    <option value="prone">Prone</option>
+                    <option value="notprone">notProne</option>
+                  </select><br/><br />
+                
+                <label for="rows">Enter area of the place </label>
+                <input type="number" name="wind" placeholder="Enter wind load" min="0" id="wind"  style="margin-left: 75px;"  required></br></br>
+                <label for="soilBearingC">Choose the concrete mix proportion</label>
+                <select name="mix" id="mixType"  style="margin-left: 20px; padding-right: 73px;" >
+                    <option value=1>1:5:10</option>
+                    <option value=2>1:4:8</option>
+                    <option value=3>1:3:6</option>
+                    <option value=4>1:2:4</option>
+                    <option value=5>1:1.5:3</option>
+                    <option value=6>1:1:2</option>
+                  </select><br/><br />
+                <input type="submit" name="submit" id="submit"/>
+                </form>
+       </div>
+    </body>
+</html>
+
