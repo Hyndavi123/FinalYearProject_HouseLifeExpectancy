@@ -35,11 +35,11 @@ SET UP:
      1. open the code in Visual Studio Code and 
      2. open a new terminal and 
      3. run the installation command for all libraries which are used
-        - pip install flask, 
-        - pip install numpy, 
-        - pip install pandas, 
-        - pip install sklearn.
+        i) pip install flask, 
+        ii) pip install numpy, 
+        iii) pip install pandas, 
+        iv) pip install sklearn.
      4. run one of the command to open the application in localhost(every system does not accept all of the below commands .i.e, one of the command works to open the website)
-        1. flask run    (or)
-        2. python -m flask run     (or)
-        3. python app.py
+        i) flask run    (or)
+        ii) python -m flask run     (or)
+        iii) python app.py
